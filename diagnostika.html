@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","on-primary-fixed-variant":"#3c475b","on-secondary-fixed":"#331200","surface-bright":"#f8f9fb","on-secondary-fixed-variant":"#763300","safety-orange-hover":"#FF6A1A","on-secondary":"#ffffff","surface-container":"#edeef0","primary-fixed-dim":"#bbc7df","tertiary-container":"#0c1c2f","primary-fixed":"#d7e3fc","primary":"#000000","outline":"#75777d","on-primary-container":"#79849b","on-tertiary-fixed":"#0c1c2f","cad-grid":"#E2E5E9","tertiary":"#000000","surface-container-highest":"#e1e2e4","surface-container-high":"#e7e8ea","on-error-container":"#93000a","on-primary-fixed":"#101c2e","secondary-container":"#fe8434","on-error":"#ffffff","slate-muted":"#627284","secondary-fixed-dim":"#ffb68e","outline-variant":"#c5c6cd","on-secondary-container":"#652a00","primary-container":"#101c2e","surface-tint":"#535f74","on-tertiary":"#ffffff","tertiary-fixed":"#d4e4fd","inverse-surface":"#2e3132","on-tertiary-fixed-variant":"#39485c","tertiary-fixed-dim":"#b8c8e0","strata-amber":"#C6823C","on-tertiary-container":"#76859b","surface-container-low":"#f3f4f6","on-surface":"#191c1e","on-surface-variant":"#44474c","surface-container-lowest":"#ffffff","inverse-on-surface":"#f0f1f3","surface-dim":"#d9dadc","background":"#f8f9fb","concrete-subtle":"#E8E9EA","concrete-border":"#D5D9DE","surface":"#f8f9fb","secondary":"#9b4500","error-container":"#ffdad6","inverse-primary":"#bbc7df","secondary-fixed":"#ffdbc9","on-background":"#191c1e","on-primary":"#ffffff","surface-variant":"#e1e2e4"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"container-max":"1320px","margin-mobile":"1rem","space-2xl":"3rem","space-xs":"0.5rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","cad-unit":"0.25rem","margin-desktop":"2.5rem","space-xl":"2rem","space-3xl":"4.5rem","space-4xl":"6rem","space-lg":"1.5rem","space-md":"1rem","gutter-mobile":"1rem"},"fontFamily":{"headline-lg-mobile":["manrope"],"display-hero-mobile":["manrope"],"title-card":["manrope"],"technical-badge":["jetbrainsMono"],"headline-lg":["manrope"],"metric-label":["jetbrainsMono"],"body-sm":["inter"],"body-md":["inter"],"headline-sm":["manrope"],"display-hero":["manrope"],"metric-digit":["manrope"],"body-lg":["inter"],"headline-md":["manrope"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"800"}],"title-card":["17px",{"lineHeight":"24px","fontWeight":"700"}],"technical-badge":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"700"}],"metric-label":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"metric-digit":["44px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="main" href="index.html"><img alt="logo.png" class="h-8 w-auto object-contain" src="assets/logo.svg"/><div class="flex flex-col"><span class="font-title-card text-title-card uppercase tracking-tight text-on-surface">УСИЛЕНИЕ ПРО</span><span class="font-technical-badge text-technical-badge text-slate-muted uppercase tracking-wider">ГЕОТЕХНИЧЕСКАЯ ИНЖЕНЕРИЯ</span></div></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-on-surface font-semibold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="private-homes" href="chastnye-doma.html">Частные дома (B2C)</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="business-and-warehouses" href="biznes-i-sklady.html">Бизнес и склады (B2B)</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="public-sector-and-mkd" href="gossektor-i-mkd.html">Госсектор и МКД (B2G)</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="diagnostics-and-monitoring" href="diagnostika.html">Диагностика и мониторинг</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-technology" href="tehnologiya.html">О технологии</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacts" href="index.html#contacts">Контакты</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end text-right"><span class="font-technical-badge text-technical-badge text-strata-amber uppercase tracking-wider">Инструментальный аудит 24/7</span><a class="font-title-card text-title-card text-on-surface hover:text-secondary transition-colors" href="tel:+79226225295">+7 (922) 622-52-95</a></div><button class="hidden sm:inline-flex items-center justify-center bg-secondary-container text-on-secondary hover:bg-safety-orange-hover transition-colors px-space-md py-space-xs rounded font-title-card text-title-card"><span class="material-symbols-outlined text-[18px] mr-space-xs">precision_manufacturing</span>Вызвать инженера-геотехника</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Blueprint Accent Strip -->
+<div class="w-full bg-primary-container text-on-primary-container py-space-xs px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between gap-space-xs font-technical-badge text-technical-badge">
+<div class="flex items-center gap-space-sm tracking-wider">
+<span class="inline-flex items-center gap-1 text-secondary-container">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          МОБИЛЬНАЯ ЛАБОРАТОРИЯ №4
+        </span>
+<span class="text-slate-muted">|</span>
+<span class="text-surface-container-highest">СП 47.13330.2016 // СП 22.13330.2016</span>
+</div>
+<div class="flex items-center gap-space-md text-slate-muted">
+<span>АТТЕСТАТ РОССТАНДАРТ RU.04.ИД</span>
+<span class="text-secondary-container">GPS/ГЛОНАСС WGS-84 СТАНЦИЯ АКТИВНА</span>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="w-full bg-surface py-space-2xl md:py-space-3xl relative overflow-hidden">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Breadcrumbs & Meta -->
+<div class="flex items-center gap-space-xs font-technical-badge text-technical-badge text-slate-muted uppercase mb-space-md">
+<a class="hover:text-primary transition-colors" href="#">Главная</a>
+<span>/</span>
+<span class="text-secondary">Диагностика и мониторинг</span>
+<span>/</span>
+<span class="text-on-surface">Инструментальный аудит</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+<!-- Left Column: Title & Key Narrative -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-high px-space-sm py-1 rounded mb-space-md">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">radar</span>
+<span class="font-technical-badge text-technical-badge uppercase tracking-wider text-on-surface font-semibold">
+              Инструментальная геофизика и мониторинг
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-space-md tracking-tight">
+            Высокоточная геотехническая диагностика грунтов и 3D-мониторинг осадок без разрушения конструкций
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl">
+            Неразрушающее георадарное подповерхностное зондирование (GPR), локализация скрытых суффозионных каверн, карстовых пустот, техногенных разуплотнений и водонасыщений с точностью лазерного 3D-нивелирования до 1 мм.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md w-full sm:w-auto mb-space-xl">
+<a class="inline-flex items-center justify-center bg-secondary-container text-on-secondary hover:bg-safety-orange-hover transition-colors px-space-lg py-space-md rounded font-title-card text-title-card shadow-sm" href="#audit-calculator">
+<span class="material-symbols-outlined text-[20px] mr-space-xs">precision_manufacturing</span>
+              Заказать выездной аудит
+              <span class="material-symbols-outlined text-[18px] ml-space-xs">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors px-space-lg py-space-md rounded font-title-card text-title-card shadow-sm" href="#report-sample">
+<span class="material-symbols-outlined text-[20px] mr-space-xs text-secondary-container">attach_file</span>
+              Пример отчета и георадарных профилей (PDF)
+            </a>
+</div>
+<!-- Quick Cert Strip -->
+<div class="flex items-center gap-space-lg pt-space-md border-t border-concrete-border w-full text-slate-muted">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">verified</span>
+<span class="font-technical-badge text-technical-badge uppercase">СРО Изыскателей РОСТ</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">fact_check</span>
+<span class="font-technical-badge text-technical-badge uppercase">Госэкспертиза РФ</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">speed</span>
+<span class="font-technical-badge text-technical-badge uppercase">Выезд за 24 часа</span>
+</div>
+</div>
+</div>
+<!-- Right Column: CAD Echogram & Spectrogram Display -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-primary-container text-on-primary-container rounded-lg p-space-md shadow-xl relative overflow-hidden">
+<!-- Header bar of CAD Terminal -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-primary-fixed-dim/20 font-technical-badge text-technical-badge">
+<div class="flex items-center gap-space-xs text-strata-amber">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>GPR-RADAR // СКАНОГРАММА ОСНОВАНИЯ №42</span>
+</div>
+<span class="bg-secondary-container text-on-secondary px-2 py-0.5 rounded text-[10px]">REAL-TIME SCAN</span>
+</div>
+<!-- Vector Radargram / Cross-Section Graphic -->
+<div class="relative bg-tertiary-container rounded p-space-sm overflow-hidden mb-space-sm">
+<div class="absolute top-2 right-2 flex flex-col gap-1 items-end z-10">
+<span class="font-technical-badge text-[10px] bg-primary/80 text-surface-bright px-1.5 py-0.5 rounded">Z: -0.0m ... -15.0m</span>
+<span class="font-technical-badge text-[10px] bg-secondary-container text-on-secondary px-1.5 py-0.5 rounded">Δρ: 18.4 Ом·м</span>
+</div>
+<!-- Inline CAD cross-section SVG simulation -->
+<svg class="w-full h-auto text-slate-muted" fill="none" viewbox="0 0 460 220" xmlns="http://www.w3.org/2000/svg">
+<!-- Soil horizon layers -->
+<rect fill="#1C2B3E" height="28" opacity="0.6" width="460" x="0" y="0"></rect>
+<text fill="#D7E3FC" font-family="JetBrains Mono" font-size="10" x="12" y="18">ПЛИТА ПОЛА / АСФАЛЬТОБЕТОН (+0.00)</text>
+<path d="M0 28 Q 115 32, 230 29 T 460 30 V 75 H 0 Z" fill="#2E3C4F" opacity="0.8"></path>
+<text fill="#B8C8E0" font-family="JetBrains Mono" font-size="9" x="12" y="55">ПЕСЧАНАЯ ПОДУШКА h=0.8м (ПЛОТНАЯ)</text>
+<!-- Disturbed horizon / Cavity anomaly -->
+<path d="M0 75 Q 140 70, 240 95 T 460 85 V 160 H 0 Z" fill="#182535"></path>
+<!-- Thermal highlight / void radar reflection waves -->
+<ellipse cx="230" cy="118" fill="#C6823C" opacity="0.35" rx="85" ry="34"></ellipse>
+<ellipse cx="230" cy="118" fill="#FE8434" opacity="0.55" rx="55" ry="20"></ellipse>
+<ellipse cx="230" cy="118" fill="#FF6A1A" opacity="0.85" rx="25" ry="9"></ellipse>
+<circle cx="230" cy="118" fill="#FFFFFF" r="3"></circle>
+<!-- Bedrock horizon -->
+<path d="M0 160 Q 200 155, 320 168 T 460 162 V 220 H 0 Z" fill="#0A1420"></path>
+<text fill="#76859B" font-family="JetBrains Mono" font-size="9" x="12" y="195">АРГИЛЛИТЫ / СУГЛИНКИ ПОЛУТВЕРДЫЕ (-15.0m)</text>
+<!-- Grid & Dimension Rulers -->
+<line opacity="0.2" stroke="#79849B" stroke-dasharray="3 3" x1="60" x2="60" y1="0" y2="220"></line>
+<line opacity="0.2" stroke="#79849B" stroke-dasharray="3 3" x1="160" x2="160" y1="0" y2="220"></line>
+<line opacity="0.2" stroke="#79849B" stroke-dasharray="3 3" x1="260" x2="260" y1="0" y2="220"></line>
+<line opacity="0.2" stroke="#79849B" stroke-dasharray="3 3" x1="360" x2="360" y1="0" y2="220"></line>
+<!-- Radar wave ripples overlay -->
+<path d="M170 115 Q 230 135 290 115" stroke="#FFFFFF" stroke-dasharray="2 2" stroke-width="1.5"></path>
+<path d="M190 108 Q 230 125 270 108" stroke="#FFFFFF" stroke-width="1.2"></path>
+<!-- Callout Marker -->
+<line stroke="#FE8434" stroke-width="1.5" x1="230" x2="330" y1="118" y2="70"></line>
+<circle cx="330" cy="70" fill="#FE8434" r="3"></circle>
+<rect fill="#0C1C2F" height="24" rx="3" stroke="#FE8434" stroke-width="0.75" width="115" x="335" y="58"></rect>
+<text fill="#FE8434" font-family="JetBrains Mono" font-size="9" font-weight="600" x="342" y="74">СУФФОЗИЯ ΔV=4.8м³</text>
+</svg>
+</div>
+<!-- Micro Metrics Inside Terminal -->
+<div class="grid grid-cols-3 gap-space-xs font-technical-badge text-technical-badge text-center">
+<div class="bg-tertiary-container p-2 rounded">
+<span class="text-slate-muted block text-[10px]">ДИЭЛ. ПРОНИЦ.</span>
+<span class="text-surface-bright font-semibold">ε = 16.2</span>
+</div>
+<div class="bg-tertiary-container p-2 rounded">
+<span class="text-slate-muted block text-[10px]">СКОРОСТЬ ВОЛНЫ</span>
+<span class="text-secondary-container font-semibold">v = 92 мм/нс</span>
+</div>
+<div class="bg-tertiary-container p-2 rounded">
+<span class="text-slate-muted block text-[10px]">ВЛАЖНОСТЬ СЛОЯ</span>
+<span class="text-strata-amber font-semibold">W = 34.8%</span>
+</div>
+</div>
+<!-- Legend strip -->
+<div class="mt-space-sm pt-space-xs border-t border-primary-fixed-dim/20 flex items-center justify-between font-technical-badge text-[11px] text-slate-muted">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>Зона размыва</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-strata-amber"></span>Разуплотнение</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#182535]"></span>Монолитный массив</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Rigorous Metrics Row -->
+<div class="mt-space-3xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-metric-digit text-metric-digit text-on-surface">до 30 м</span>
+<span class="material-symbols-outlined text-secondary-container text-[24px]">layers</span>
+</div>
+<div class="font-metric-label text-metric-label text-slate-muted uppercase mb-space-xs">Глубина зондирования</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Сквозное сканирование толщи основания антенными блоками 150-900 МГц без бурения.</p>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-metric-digit text-metric-digit text-on-surface">до 1 мм</span>
+<span class="material-symbols-outlined text-secondary-container text-[24px]">straighten</span>
+</div>
+<div class="font-metric-label text-metric-label text-slate-muted uppercase mb-space-xs">Прецизионная точность</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Лазерное 3D-нивелирование реперных марок и определение кренов конструкций.</p>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-metric-digit text-metric-digit text-secondary-container">24 ч</span>
+<span class="material-symbols-outlined text-secondary-container text-[24px]">schedule</span>
+</div>
+<div class="font-metric-label text-metric-label text-slate-muted uppercase mb-space-xs">Срок выпуска отчета</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Официальное экспертное заключение с ведомостью дефектов и 3D-картограммой осадок.</p>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-metric-digit text-metric-digit text-on-surface">100%</span>
+<span class="material-symbols-outlined text-secondary-container text-[24px]">verified_user</span>
+</div>
+<div class="font-metric-label text-metric-label text-slate-muted uppercase mb-space-xs">Сохранность покрытий</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Полное отсутствие вскрытий, шурфов и ущерба промышленным полам или асфальту.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Hardware Complex Section (Inspired by Reference Graphic Style) -->
+<section class="w-full bg-surface-container-low py-space-3xl relative">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-technical-badge text-technical-badge text-strata-amber uppercase mb-space-xs">
+<span class="w-2.5 h-2.5 rounded bg-strata-amber"></span>
+            Спецификация приборной базы
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Комплекс аппаратных методов диагностики
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Комбинация геофизических и геодезических методов позволяет получить исчерпывающую геотехническую модель объекта без остановки производственного процесса.
+        </p>
+</div>
+<!-- 3 Method Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: GPR -->
+<div class="bg-surface-container-lowest rounded p-space-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-container"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-technical-badge text-technical-badge bg-surface-container px-2.5 py-1 rounded text-on-surface uppercase font-semibold">
+                МЕТОД 01 // [GPR / ОКО-3]
+              </span>
+<span class="font-metric-digit text-headline-lg text-surface-container-highest font-extrabold select-none">01</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface mb-space-sm">
+              Георадарное подповерхностное зондирование
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Импульсное высокочастотное профилирование грунтового массива антенными комплексами георадара «ОКО-3» с центральными частотами 150, 250, 400 и 900 МГц.
+            </p>
+<div class="bg-surface-container p-space-md rounded space-y-space-xs mb-space-lg">
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Выявление скрытых каверн, карстовых суффозий и пустот</span>
+</div>
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Локализация утечек водонесущих коммуникаций</span>
+</div>
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Картирование зон разуплотнения под плитами полов до 30 м</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-concrete-border flex items-center justify-between text-slate-muted font-technical-badge text-technical-badge">
+<span>ГОСТ 32868-2014</span>
+<span class="text-secondary font-semibold">Разрешение: 0.05 м</span>
+</div>
+</div>
+<!-- Card 2: Laser 3D Scanning -->
+<div class="bg-surface-container-lowest rounded p-space-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-technical-badge text-technical-badge bg-surface-container px-2.5 py-1 rounded text-on-surface uppercase font-semibold">
+                МЕТОД 02 // [3D-LIDAR / LEICA]
+              </span>
+<span class="font-metric-digit text-headline-lg text-surface-container-highest font-extrabold select-none">02</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface mb-space-sm">
+              Лазерное 3D-сканирование и нивелирование
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Построение высокоточных цифровых карт высотных отметок плит, ростверков и балок с фиксацией пространственных кренов и раскрытия деформационных швов.
+            </p>
+<div class="bg-surface-container p-space-md rounded space-y-space-xs mb-space-lg">
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Погрешность взаимных высотных отметок до 1 мм</span>
+</div>
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Построение изогипс просадки и картограмм осадочных воронок</span>
+</div>
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Контроль соосности колонн и рельсовых путей мостовых кранов</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-concrete-border flex items-center justify-between text-slate-muted font-technical-badge text-technical-badge">
+<span>ГОСТ 24846-2019</span>
+<span class="text-secondary font-semibold">Точность: I класс</span>
+</div>
+</div>
+<!-- Card 3: IoT Monitoring -->
+<div class="bg-surface-container-lowest rounded p-space-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-strata-amber"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-technical-badge text-technical-badge bg-surface-container px-2.5 py-1 rounded text-on-surface uppercase font-semibold">
+                МЕТОД 03 // [IOT TELEMETRY]
+              </span>
+<span class="font-metric-digit text-headline-lg text-surface-container-highest font-extrabold select-none">03</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface mb-space-sm">
+              Тензометрический и инклинометрический IoT-мониторинг
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Установка автономных беспроводных струнных датчиков и электронных маяков раскрытия трещин с передачей телеметрии на пульт инженера 24/7.
+            </p>
+<div class="bg-surface-container p-space-md rounded space-y-space-xs mb-space-lg">
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Фиксация раскрытия трещин с дискретностью до 0.01 мм</span>
+</div>
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Мгновенное SMS/Email оповещение при превышении порога</span>
+</div>
+<div class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
+<span>Автономная работа датчиков до 5 лет без подзарядки</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-concrete-border flex items-center justify-between text-slate-muted font-technical-badge text-technical-badge">
+<span>GSM / LoRaWAN</span>
+<span class="text-secondary font-semibold">Опрос: каждые 10 мин</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Evidence Section: Customer Perception vs Instrumental Reality -->
+<section class="w-full bg-surface py-space-3xl">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<div class="inline-flex items-center gap-space-xs font-technical-badge text-technical-badge text-secondary-container uppercase mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">troubleshoot</span>
+          Геотехнический сравнительный анализ
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-sm">
+          Что видит заказчик vs Что фиксирует приборная геофизика
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Внешне незначительная микротрещина на стене или просадка плиты пола на 5 мм в 82% случаев скрывает масштабные скрытые процессы: размыв несущего слоя, суффозию или водонасыщение.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-stretch">
+<!-- Panel 1: Surface View (Visual Only) -->
+<div class="bg-surface-container-low rounded-lg p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-concrete-border mb-space-lg">
+<span class="font-technical-badge text-technical-badge uppercase text-slate-muted font-semibold">
+                ВИЗУАЛЬНАЯ КАРТИНА (БЕЗ ПРИБОРОВ)
+              </span>
+<span class="bg-slate-muted/20 text-slate-muted px-2 py-0.5 rounded font-technical-badge text-[11px]">ПОВЕРХНОСТЬ</span>
+</div>
+<div class="bg-surface-container-highest h-48 rounded flex flex-col items-center justify-center p-space-lg text-center mb-space-lg relative overflow-hidden">
+<span class="material-symbols-outlined text-[48px] text-slate-muted mb-space-xs">visibility_off</span>
+<p class="font-title-card text-title-card text-on-surface">«Обычная усадочная трещина штукатурки»</p>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 max-w-xs">
+                Ширина раскрытия 0.8 мм по цоколю здания. Ошибочный вывод: косметический ремонт и расшивка шва.
+              </p>
+<div class="absolute bottom-2 right-2 bg-error text-on-error px-2 py-0.5 rounded text-[10px] font-technical-badge">
+                РИСК КРИТИЧЕСКОЙ ДЕФОРМАЦИИ
+              </div>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0">close</span>
+<div>
+<h4 class="font-title-card text-body-lg text-on-surface font-semibold">Не видна причина деструкции</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Косметический ремонт без ликвидации подземной пустоты приводит к повторному растрескиванию через 2–4 месяца.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0">close</span>
+<div>
+<h4 class="font-title-card text-body-lg text-on-surface font-semibold">Скрытая аварийная водонасыщенность</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Утечка из напорного водопровода или ливневки не выходит на поверхность, разжижая суглинки под подошвой фундамента.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-sm bg-surface-container rounded text-center font-technical-badge text-technical-badge text-error">
+            ТРАДИЦИОННЫЙ ПОДХОД = ПЕРЕПЛАТА ЗА БЕСПОЛЕЗНЫЙ РЕМОНТ
+          </div>
+</div>
+<!-- Panel 2: Geophysical GPR View -->
+<div class="bg-primary-container text-on-primary-container rounded-lg p-space-xl flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-primary-fixed-dim/20 mb-space-lg">
+<span class="font-technical-badge text-technical-badge uppercase text-secondary-container font-semibold">
+                ГЕОФИЗИЧЕСКИЙ СРЕЗ (ОКО-3 + 3D НИВЕЛИР)
+              </span>
+<span class="bg-secondary-container text-on-secondary px-2 py-0.5 rounded font-technical-badge text-[11px]">ГЛУБИНА ДО 15 М</span>
+</div>
+<!-- Vector radar plot -->
+<div class="bg-tertiary-container rounded p-space-md mb-space-lg relative overflow-hidden">
+<div class="flex items-center justify-between text-[11px] font-technical-badge text-slate-muted mb-2">
+<span>ПК 0+14.2 (ОСЬ ФУНДАМЕНТА)</span>
+<span class="text-strata-amber">ДИАГНОСТИРОВАН КАРСТОВЫЙ ПРОВАЛ</span>
+</div>
+<div class="h-32 w-full bg-[#0A1420] rounded relative flex items-center justify-center p-2">
+<!-- SVG heat-map representation -->
+<svg class="w-full h-full" fill="none" viewbox="0 0 380 100" xmlns="http://www.w3.org/2000/svg">
+<!-- Ground line -->
+<line stroke="#FFFFFF" stroke-width="2" x1="0" x2="380" y1="15" y2="15"></line>
+<!-- Foundation block -->
+<rect fill="#39485C" height="25" stroke="#76859B" width="140" x="120" y="15"></rect>
+<text fill="#FFFFFF" font-family="JetBrains Mono" font-size="8" x="145" y="32">ФБС 24.6.6</text>
+<!-- Void -->
+<path d="M140 40 C 150 75, 230 85, 250 40 Z" fill="#EE7828" opacity="0.4"></path>
+<circle cx="195" cy="58" fill="#FF6A1A" opacity="0.75" r="18"></circle>
+<text fill="#FFFFFF" font-family="JetBrains Mono" font-size="9" font-weight="700" x="165" y="62">КАВЕРНА 6.2 м³</text>
+<!-- Water plume -->
+<path d="M220 40 Q 260 70 310 80" stroke="#38BDF8" stroke-dasharray="3 3" stroke-width="2"></path>
+<text fill="#38BDF8" font-family="JetBrains Mono" font-size="7" x="270" y="75">ПРОТЕЧКА ХВС</text>
+</svg>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0">check_circle</span>
+<div>
+<h4 class="font-title-card text-body-lg text-surface-bright font-semibold">Точная локализация суффозионной полости</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">Рассчитан точный объем инъекционного полимера для 100% заполнения каверны без вскрытия полов.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0">check_circle</span>
+<div>
+<h4 class="font-title-card text-body-lg text-surface-bright font-semibold">Определение первопричины аварии</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">Обнаружен скрытый свищ в подземном вводе водопровода на глубине 2.3 м, размывавший подушку.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-sm bg-tertiary-container rounded text-center font-technical-badge text-technical-badge text-secondary-container">
+            ПРИБОРНЫЙ АУДИТ = ЭКОНОМИЯ ДО 70% НА ЛОКАЛЬНОМ УСТРАНЕНИИ
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Audit Configurator Widget -->
+<section class="w-full bg-surface-container-low py-space-3xl" id="audit-calculator">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-surface-container-lowest rounded-lg shadow-md p-space-xl md:p-space-2xl">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md pb-space-lg border-b border-concrete-border mb-space-xl">
+<div>
+<span class="font-technical-badge text-technical-badge text-secondary-container uppercase">ИНТЕРАКТИВНЫЙ КАЛЬКУЛЯТОР-КОНФИГУРАТОР</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">
+              Подбор аппаратного комплекса под задачу вашего объекта
+            </h2>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded font-technical-badge text-technical-badge text-slate-muted">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+            РЕЖИМ ОНЛАЙН-РАСЧЕТА
+          </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Selection Controls (7 cols) -->
+<div class="lg:col-span-7 space-y-space-xl">
+<!-- Step 1: Object Type -->
+<div>
+<label class="block font-technical-badge text-technical-badge uppercase tracking-wider text-on-surface mb-space-sm">
+                ШАГ 1: ТИП ОБЪЕКТА ИССЛЕДОВАНИЯ
+              </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs" id="object-selector">
+<button class="config-btn active flex items-center gap-space-sm p-space-sm rounded bg-primary-container text-on-primary text-left transition-all" data-val="industrial" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">factory</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Промзона / Склад</span>
+<span class="font-body-sm text-body-sm opacity-80">Полы, ростверки, крановые пути</span>
+</div>
+</button>
+<button class="config-btn flex items-center gap-space-sm p-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" data-val="residential" type="button">
+<span class="material-symbols-outlined text-[20px] text-slate-muted">apartment</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Жилой дом / МКД</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Ленточные и плитные фундаменты</span>
+</div>
+</button>
+<button class="config-btn flex items-center gap-space-sm p-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" data-val="linear" type="button">
+<span class="material-symbols-outlined text-[20px] text-slate-muted">alt_route</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Линейный / Дорожный</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Асфальт, насыпи, тоннели</span>
+</div>
+</button>
+<button class="config-btn flex items-center gap-space-sm p-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" data-val="historic" type="button">
+<span class="material-symbols-outlined text-[20px] text-slate-muted">museum</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Историческое здание</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Бутовая кладка, памятники ОКН</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Step 2: Task Type -->
+<div>
+<label class="block font-technical-badge text-technical-badge uppercase tracking-wider text-on-surface mb-space-sm">
+                ШАГ 2: ДИАГНОСТИЧЕСКАЯ ЗАДАЧА
+              </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs" id="task-selector">
+<button class="task-btn active flex items-center gap-space-sm p-space-sm rounded bg-primary-container text-on-primary text-left transition-all" data-val="cavity" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">texture</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Поиск пустот и каверн</span>
+<span class="font-body-sm text-body-sm opacity-80">Локализация зон суффозии</span>
+</div>
+</button>
+<button class="task-btn flex items-center gap-space-sm p-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" data-val="settlement" type="button">
+<span class="material-symbols-outlined text-[20px] text-slate-muted">trending_down</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Осадка и крен здания</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Трещины несущих конструкций</span>
+</div>
+</button>
+<button class="task-btn flex items-center gap-space-sm p-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" data-val="pre-recon" type="button">
+<span class="material-symbols-outlined text-[20px] text-slate-muted">upgrade</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Перед реконструкцией</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Проверка резерва несущей способности</span>
+</div>
+</button>
+<button class="task-btn flex items-center gap-space-sm p-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" data-val="leak" type="button">
+<span class="material-symbols-outlined text-[20px] text-slate-muted">water_damage</span>
+<div>
+<span class="font-title-card text-body-md block font-semibold">Аварийная протечка</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Оценка обводнения под плитой</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Calculated Output & Spec Card (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container p-space-xl rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-concrete-border mb-space-md">
+<span class="font-technical-badge text-technical-badge uppercase text-slate-muted">ПЛАН ОБСЛЕДОВАНИЯ</span>
+<span class="font-technical-badge text-technical-badge text-secondary-container font-semibold">РАСЧЕТ ВЫПОЛНЕН</span>
+</div>
+<div class="space-y-space-md mb-space-lg">
+<div>
+<span class="font-technical-badge text-[11px] text-slate-muted uppercase block mb-1">РЕКОМЕНДУЕМЫЙ ПРИБОРНЫЙ КОМПЛЕКС:</span>
+<p class="font-title-card text-title-card text-on-surface font-semibold" id="calc-equipment">
+                    Георадар «ОКО-3» (АБ-400/900 МГц) + Лазерный сканер Leica RTC360
+                  </p>
+</div>
+<div class="grid grid-cols-2 gap-space-sm font-technical-badge text-technical-badge">
+<div class="bg-surface-container-lowest p-space-sm rounded">
+<span class="text-slate-muted block text-[10px]">СРОК ВЫЕЗДА:</span>
+<span class="font-semibold text-on-surface text-body-md">24 часа</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded">
+<span class="text-slate-muted block text-[10px]">ПОЛЕВЫЕ РАБОТЫ:</span>
+<span class="font-semibold text-secondary-container text-body-md">1–2 рабочих дня</span>
+</div>
+</div>
+<div>
+<span class="font-technical-badge text-[11px] text-slate-muted uppercase block mb-1">СОСТАВ ОТЧЕТНОЙ ДОКУМЕНТАЦИИ:</span>
+<ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-secondary-container">done</span> 3D-эхограммы и геологические разрезы основания</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-secondary-container">done</span> Протокол лазерного нивелирования и кренов</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-secondary-container">done</span> Дефектная ведомость и проект инъекционного усиления</li>
+</ul>
+</div>
+</div>
+</div>
+<button class="w-full bg-secondary-container hover:bg-safety-orange-hover text-on-secondary py-space-md rounded font-title-card text-title-card transition-colors flex items-center justify-center gap-space-xs shadow-sm" onclick="document.getElementById('order-form').scrollIntoView({behavior: 'smooth'})" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+              Зафиксировать конфигурацию и вызвать инженера
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Legal & Standards Section -->
+<section class="w-full bg-surface py-space-3xl">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<span class="font-technical-badge text-technical-badge text-strata-amber uppercase tracking-wider block mb-space-xs">
+            СТАНДАРТИЗАЦИЯ И ЛЕГИТИМНОСТЬ
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Нормативная база и аттестация лаборатории
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Все заключения имеют официальную юридическую силу, принимаются судебными экспертами, органами стройнадзора и государственной экспертизы РФ.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Standard 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[22px]">gavel</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface mb-1">СП 47.13330.2016</h3>
+<span class="font-technical-badge text-[11px] text-secondary-container block mb-space-xs font-semibold">ИНЖЕНЕРНЫЕ ИЗЫСКАНИЯ</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Полное соответствие актуальным сводам правил выполнения полевых геофизических работ.</p>
+</div>
+<!-- Standard 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface mb-1">ГОСТ 20522-2012</h3>
+<span class="font-technical-badge text-[11px] text-secondary-container block mb-space-xs font-semibold">СТАТИСТИЧЕСКАЯ ОБРАБОТКА</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Математически достоверная интерпретация физико-механических характеристик грунтов.</p>
+</div>
+<!-- Standard 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[22px]">balance</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface mb-1">Росстандарт РФ</h3>
+<span class="font-technical-badge text-[11px] text-secondary-container block mb-space-xs font-semibold">МЕТРОЛОГИЧЕСКАЯ ПОВЕРКА</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ежегодная поверка георадаров, оптических и лазерных нивелиров в аккредитованном центре.</p>
+</div>
+<!-- Standard 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[22px]">folder_special</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface mb-1">Членство в СРО</h3>
+<span class="font-technical-badge text-[11px] text-secondary-container block mb-space-xs font-semibold">ВЫПИСКА ИЗ РЕЕСТРА</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Право работы на особо опасных, технически сложных и уникальных объектах капстроительства.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sample PDF Download Module -->
+<section class="w-full bg-primary-container text-on-primary py-space-2xl" id="report-sample">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-tertiary-container rounded-lg p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<div class="flex items-center gap-space-lg">
+<div class="w-16 h-16 rounded bg-secondary-container flex items-center justify-center text-on-secondary shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[36px]">picture_as_pdf</span>
+</div>
+<div>
+<span class="font-technical-badge text-technical-badge text-secondary-container uppercase">ОФИЦИАЛЬНЫЙ ОБРАЗЕЦ ДОКУМЕНТАЦИИ</span>
+<h3 class="font-title-card text-headline-sm text-surface-bright mt-0.5">
+              Технический отчет комплексного георадарного обследования (PDF, 14.8 Мб)
+            </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">
+              Включает пример 3D-сканограмм, ведомости кренов, расчет зон пластических деформаций и расчетную схему инъектирования геополимерами.
+            </p>
+</div>
+</div>
+<button class="inline-flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:bg-surface-bright px-space-lg py-space-md rounded font-title-card text-title-card shrink-0 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">download</span>
+          Скачать образец отчета
+        </button>
+</div>
+</div>
+</section>
+<!-- Direct Leadership Contacts & Dispatch Form -->
+<section class="w-full bg-surface py-space-3xl" id="order-form">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+<!-- Left: Direct Leadership & Engineers -->
+<div class="lg:col-span-5 space-y-space-lg">
+<div>
+<span class="font-technical-badge text-technical-badge text-secondary-container uppercase block mb-space-xs">
+              ПРЯМОЙ КОНТАКТ С РУКОВОДСТВОМ
+            </span>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+              Инженерно-технический состав
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Вы общаетесь напрямую с первыми лицами компании и главными инженерами проектов, лично отвечающими за геофизическую точность.
+            </p>
+</div>
+<!-- Card: Director -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-technical-badge text-[11px] text-strata-amber uppercase font-semibold">ДИРЕКТОР КОМПАНИИ</span>
+<span class="w-2 h-2 rounded-full bg-strata-amber"></span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface">Дмитрий Валерьевич</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mb-space-sm">Курирование стратегических и спорных объектов, судебная экспертиза</p>
+<a class="inline-flex items-center gap-space-xs font-title-card text-title-card text-secondary hover:text-safety-orange-hover transition-colors" href="tel:+79226225295">
+<span class="material-symbols-outlined text-[18px]">phone_enabled</span>
+              +7 (922) 622-52-95
+            </a>
+</div>
+<!-- Card: Lead Engineer (ГИП) -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-technical-badge text-[11px] text-secondary-container uppercase font-semibold">ГЛАВНЫЙ ИНЖЕНЕР ПРОЕКТА (ГИП)</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface">Валерий Васильевич</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mb-space-sm">Технический аудит, полевые измерения, расчет инъекционных составов</p>
+<a class="inline-flex items-center gap-space-xs font-title-card text-title-card text-secondary hover:text-safety-orange-hover transition-colors" href="tel:+79228222758">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+              +7 (922) 822-27-58
+            </a>
+</div>
+<!-- Center Address & Email Details -->
+<div class="bg-surface-container-low p-space-md rounded space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-slate-muted shrink-0 mt-0.5">location_on</span>
+<span><strong>Инженерный центр:</strong> г. Оренбург, ул. Зиминская, д. 5</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-slate-muted shrink-0">mail</span>
+<span><strong>Прямой Email:</strong> <a class="text-secondary hover:underline font-technical-badge text-technical-badge" href="mailto:dom@barn56.ru">dom@barn56.ru</a></span>
+</div>
+</div>
+</div>
+<!-- Right: Dispatch Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-xl md:p-space-2xl rounded-lg shadow-md">
+<div class="mb-space-lg">
+<span class="font-technical-badge text-technical-badge text-secondary-container uppercase">ОПЕРАТИВНЫЙ ЗАПРОС</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+              Заявка на инструментальный аудит и геосканирование основания
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1">
+              Инженер свяжется с вами в течение 15 минут для согласования высотных отметок и деталей выезда полевой бригады.
+            </p>
+</div>
+<form class="space-y-space-md" id="auditRequestForm" onsubmit="submitLeadForm(event, 'Заявка на аудит (георадар) — Усиление ПРО', '_1-form-success')">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-technical-badge text-technical-badge uppercase text-slate-muted mb-1">
+                  ФИО ИЛИ ОРГАНИЗАЦИЯ *
+                </label>
+<input class="w-full bg-surface-bright text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-sm" name="ФИО_организация" placeholder="Иванов И.И." required="" type="text"/>
+</div>
+<div>
+<label class="block font-technical-badge text-technical-badge uppercase text-slate-muted mb-1">
+                  КОНТАКТНЫЙ ТЕЛЕФОН *
+                </label>
+<input class="w-full bg-surface-bright text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-sm" name="Телефон" placeholder="+7 (___) ___-__-__" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-technical-badge text-technical-badge uppercase text-slate-muted mb-1">
+                АДРЕС ИЛИ РАСПОЛОЖЕНИЕ ОБЪЕКТА *
+              </label>
+<input class="w-full bg-surface-bright text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-sm" name="Адрес_объекта" placeholder="г. Оренбург или область (населенный пункт, промзона)" required="" type="text"/>
+</div>
+<div>
+<label class="block font-technical-badge text-technical-badge uppercase text-slate-muted mb-1">
+                ХАРАКТЕР ДЕФОРМАЦИЙ И КРАТКОЕ ОПИСАНИЕ ЗАДАЧИ
+              </label>
+<textarea class="w-full bg-surface-bright text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-sm" name="Описание_проблемы" placeholder="Трещины в стенах, просадка промышленного пола под погрузчиками, замачивание основания..." rows="3"></textarea>
+</div>
+<div class="pt-space-xs">
+<button class="w-full bg-secondary-container hover:bg-safety-orange-hover text-on-secondary py-space-md rounded font-title-card text-title-card transition-colors flex items-center justify-center gap-space-xs shadow-md" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+                Направить заявку в инженерный отдел
+              </button>
+</div>
+<div class="hidden p-space-sm bg-surface-container rounded text-on-surface font-body-sm text-body-sm text-center flex items-center justify-center gap-space-xs" id="_1-form-success">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span>Заявка зарегистрирована. Инженер Валерий Васильевич свяжется с вами в течение 15 минут.</span>
+</div>
+<p class="font-body-sm text-[11px] text-slate-muted text-center">
+              Нажимая кнопку, вы подтверждаете согласие на обработку персональных данных в соответствии с регламентом СРО и политикой конфиденциальности.
+            </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Script for Configurator -->
+<script>
+  // Отправка заявок на почту dom@barn56.ru через FormSubmit.co (без бэкенда).
+  // При первой отправке с сайта FormSubmit пришлёт на dom@barn56.ru письмо-подтверждение —
+  // нужно один раз кликнуть "Activate" в нём, дальше все заявки идут напрямую.
+  function submitLeadForm(event, subjectLabel, successElId) {
+    event.preventDefault();
+    const form = event.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const successEl = successElId ? document.getElementById(successElId) : null;
+    const data = new FormData(form);
+    data.append('_subject', subjectLabel);
+    data.append('_captcha', 'false');
+    data.append('_template', 'table');
+    const originalHTML = btn ? btn.innerHTML : null;
+    if (btn) { btn.disabled = true; btn.innerHTML = 'Отправка…'; }
+    fetch('https://formsubmit.co/ajax/dom@barn56.ru', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+      .then((r) => (r.ok ? r.json() : Promise.reject(r)))
+      .then(() => {
+        if (successEl) { successEl.classList.remove('hidden'); }
+        else { alert('Заявка отправлена. Мы свяжемся с вами в ближайшее время.'); }
+        form.reset();
+      })
+      .catch(() => {
+        alert('Не удалось отправить заявку через сайт. Позвоните нам напрямую: +7 (922) 622-52-95');
+      })
+      .finally(() => {
+        if (btn) { btn.disabled = false; btn.innerHTML = originalHTML; }
+      });
+  }
+
+  (function() {
+      const objButtons = document.querySelectorAll('#object-selector .config-btn');
+      const taskButtons = document.querySelectorAll('#task-selector .task-btn');
+      const equipOutput = document.getElementById('calc-equipment');
+
+      const equipmentMatrix = {
+        'industrial': {
+          'cavity': 'Георадар «ОКО-3» (АБ-400/900 МГц) + Лазерный сканер Leica RTC360 (сканирование полов)',
+          'settlement': 'Высокоточный цифровой нивелир Leica DNA03 + Антенный блок ОКО 250 МГц (до 15 м)',
+          'pre-recon': 'Комплекс GPR-зондирования + ультразвуковая томография бетона плит + 3D-скан',
+          'leak': 'Георадарное влагометрическое профилирование (АБ-400) + трассопоисковый комплекс'
+        },
+        'residential': {
+          'cavity': 'Георадар «ОКО-3» (АБ-250/700) + оптический нивелир I класса (периметр фундамента)',
+          'settlement': 'Система электронных маяков IoT (тензометрия) + нивелирование осадочных марок',
+          'pre-recon': 'Георадарное профилирование основания на глубину до 12 м + оценка мощности подушки',
+          'leak': 'Локатор утечек + термогигрометрическое сканирование цокольного узла'
+        },
+        'linear': {
+          'cavity': 'Мобильная георадарная тележка со спаренными антеннами 400+900 МГц (до 20 км/день)',
+          'settlement': 'GNSS/RTK геодезическая привязка + профилограф дорожного полотна',
+          'pre-recon': 'Непрерывное GPR-сканирование дорожной одежды и подстилающего грунта до 5 м',
+          'leak': 'Георадарная съемка фильтрационных путей в теле насыпи'
+        },
+        'historic': {
+          'cavity': 'Неразрушающий сверхвысокочастотный геоскан 1200 МГц (без повреждения кладки и лепнины)',
+          'settlement': 'Беспроводные микро-маяки смещения трещин 24/7 + тахеометрический мониторинг',
+          'pre-recon': 'Архитектурно-археологическое 3D-лазерное сканирование + подповерхностный срез бута',
+          'leak': 'Бесконтактная влагометрия и картирование солевой деструкции цоколя'
+        }
+      };
+
+      let selectedObj = 'industrial';
+      let selectedTask = 'cavity';
+
+      function updateEquipment() {
+        if (equipmentMatrix[selectedObj] && equipmentMatrix[selectedObj][selectedTask]) {
+          equipOutput.textContent = equipmentMatrix[selectedObj][selectedTask];
+        }
+      }
+
+      objButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          objButtons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'active');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+            const icon = b.querySelector('.material-symbols-outlined');
+            if (icon) { icon.classList.remove('text-secondary-container'); icon.classList.add('text-slate-muted'); }
+          });
+          this.classList.remove('bg-surface-container', 'text-on-surface');
+          this.classList.add('bg-primary-container', 'text-on-primary', 'active');
+          const activeIcon = this.querySelector('.material-symbols-outlined');
+          if (activeIcon) { activeIcon.classList.remove('text-slate-muted'); activeIcon.classList.add('text-secondary-container'); }
+          selectedObj = this.getAttribute('data-val');
+          updateEquipment();
+        });
+      });
+
+      taskButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          taskButtons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'active');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+            const icon = b.querySelector('.material-symbols-outlined');
+            if (icon) { icon.classList.remove('text-secondary-container'); icon.classList.add('text-slate-muted'); }
+          });
+          this.classList.remove('bg-surface-container', 'text-on-surface');
+          this.classList.add('bg-primary-container', 'text-on-primary', 'active');
+          const activeIcon = this.querySelector('.material-symbols-outlined');
+          if (activeIcon) { activeIcon.classList.remove('text-slate-muted'); activeIcon.classList.add('text-secondary-container'); }
+          selectedTask = this.getAttribute('data-val');
+          updateEquipment();
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary-container mt-space-3xl"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-desktop py-space-3xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><div class="h-8 w-8 rounded bg-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">architecture</span></div><span class="font-title-card text-title-card uppercase tracking-wider text-surface-container-lowest">УСИЛЕНИЕ ПРО</span></div><p class="font-body-sm text-body-sm text-on-primary-container">Комплексная инъекционная стабилизация несущих оснований, ликвидация просадок и гидроизоляция подземных контуров без разрушения поверхностей.</p><div class="pt-space-xs"><span class="inline-flex items-center gap-space-xs font-technical-badge text-technical-badge text-strata-amber uppercase"><span class="w-2 h-2 rounded-full bg-strata-amber inline-block"></span> Аккредитованный генподрядчик</span></div></div><div class="space-y-space-sm"><span class="font-technical-badge text-technical-badge uppercase tracking-wider text-surface-container-lowest block">Сегменты и решения</span><ul class="space-y-space-xs font-body-md text-body-md"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-strata-amber">chevron_right</span><a class="hover:text-surface-container-lowest transition-colors" data-path="private-homes" href="chastnye-doma.html">Частные дома и коттеджи (B2C)</a></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-strata-amber">chevron_right</span><a class="hover:text-surface-container-lowest transition-colors" data-path="business-and-warehouses" href="biznes-i-sklady.html">Бизнес-центры и склады (B2B)</a></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-strata-amber">chevron_right</span><a class="hover:text-surface-container-lowest transition-colors" data-path="public-sector-and-mkd" href="gossektor-i-mkd.html">Госсектор и многоквартирные дома (B2G)</a></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-strata-amber">chevron_right</span><a class="hover:text-surface-container-lowest transition-colors" data-path="diagnostics-and-monitoring" href="diagnostika.html">IoT-мониторинг и георадарный скан</a></li></ul></div><div class="space-y-space-sm"><span class="font-technical-badge text-technical-badge uppercase tracking-wider text-surface-container-lowest block">Инженерные стандарты</span><div class="space-y-space-xs font-body-sm text-body-sm"><div class="bg-tertiary-container p-space-sm rounded"><span class="font-technical-badge text-technical-badge text-surface-container-lowest block">СРО / ГОСТ 20522-2012</span><span class="text-slate-muted font-body-sm text-body-sm">Допуск к ответственным и уникальным объектам</span></div><div class="bg-tertiary-container p-space-sm rounded"><span class="font-technical-badge text-technical-badge text-surface-container-lowest block">ISO 9001:2015 &amp; BIM/IFC</span><span class="text-slate-muted font-body-sm text-body-sm">Цифровой надзор и геологическое моделирование</span></div><div class="bg-tertiary-container p-space-sm rounded"><span class="font-technical-badge text-technical-badge text-strata-amber block">ЭКО-ПОЛИМЕРЫ</span><span class="text-slate-muted font-body-sm text-body-sm">Нейтральны к грунтовым водам и экосистемам</span></div></div></div><div class="space-y-space-sm"><span class="font-technical-badge text-technical-badge uppercase tracking-wider text-surface-container-lowest block">Контакты и лаборатория</span><div class="space-y-space-xs font-body-md text-body-md"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-strata-amber shrink-0 mt-0.5">location_on</span><span>г. Оренбург, ул. Зиминская, д. 5</span></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-strata-amber shrink-0 mt-0.5">science</span><span>Полевая георадарная лаборатория №4</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-strata-amber shrink-0">call</span><a class="text-surface-container-lowest hover:text-strata-amber transition-colors font-technical-badge text-technical-badge" href="tel:+79226225295">+7 (922) 622-52-95</a></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-strata-amber shrink-0">mail</span><a class="font-technical-badge text-technical-badge hover:text-strata-amber transition-colors" href="mailto:dom@barn56.ru">dom@barn56.ru</a></div></div></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-slate-muted"><p>© 2026 ИП Книжник Дмитрий Валерьевич («Усиление ПРО»). Геотехнические системы и стабилизация грунтов. Все права защищены.</p><div class="flex gap-space-lg font-technical-badge text-technical-badge"><a class="hover:text-surface-container-lowest transition-colors" data-path="technical-regulations" href="#">Регламенты СРО</a><a class="hover:text-surface-container-lowest transition-colors" data-path="privacy-policy" href="#">Конфиденциальность</a></div></div></div></footer></body></html>
