@@ -648,7 +648,7 @@
 </div>
 <!-- Right Application Form -->
 <div class="lg:col-span-6 bg-surface-container-lowest text-on-surface p-space-xl md:p-space-2xl flex flex-col justify-center">
-<form class="space-y-space-md" onsubmit="submitLeadForm(event, 'Заявка с сайта B2C — Усиление ПРО', 'b2c-form-success')">
+<form class="space-y-space-md" onsubmit="submitLeadForm(event, 'Заявка с сайта B2C — Усиление ПРО', 'b2c-form-success')"><input type="text" name="_hp" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <div>
 <span class="font-title-card text-headline-sm text-on-surface block mb-cad-unit">Заявка на инструментальный аудит</span>
 <span class="font-body-sm text-body-sm text-slate-muted block mb-space-md">Выезд инженера в день обращения или на удобную дату</span>
@@ -779,9 +779,7 @@
     if (timeLabel) timeLabel.innerText = `${daysCount} ${daysCount === 1 ? 'рабочий день' : 'рабочих дня'}`;
   }
 
-  // Отправка заявок на почту mail@usilenie.pro через FormSubmit.co (без бэкенда).
-  // При первой отправке с сайта FormSubmit пришлёт на mail@usilenie.pro письмо-подтверждение —
-  // нужно один раз кликнуть "Activate" в нём, дальше все заявки идут напрямую.
+  // Отправка заявок на почту mail@usilenie.pro через собственную функцию /api/lead (Vercel → SMTP Яндекс 360).
   function submitLeadForm(event, subjectLabel, successElId) {
     event.preventDefault();
     const form = event.target;
@@ -789,14 +787,14 @@
     const successEl = successElId ? document.getElementById(successElId) : null;
     const data = new FormData(form);
     data.append('_subject', subjectLabel);
-    data.append('_captcha', 'false');
-    data.append('_template', 'table');
+    data.append('_page', location.pathname + location.search);
+    data.append('_t', String(Math.round(performance.now())));
     const originalHTML = btn ? btn.innerHTML : null;
     if (btn) { btn.disabled = true; btn.innerHTML = 'Отправка…'; }
-    fetch('https://formsubmit.co/ajax/mail@usilenie.pro', {
+    fetch('/api/lead', {
       method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: data
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(data))
     })
       .then((r) => (r.ok ? r.json() : Promise.reject(r)))
       .then(() => {

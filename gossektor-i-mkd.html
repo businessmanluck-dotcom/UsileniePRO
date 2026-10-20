@@ -536,7 +536,7 @@
 <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
               Выезд инженера-геотехника с оптическим нивелиром и георадаром. Составление дефектной ведомости и протокола осадок для Фонда капремонта или муниципалитета.
             </p>
-<form class="space-y-space-xs" onsubmit="submitLeadForm(event, 'Заявка с сайта B2G/МКД — Усиление ПРО', 'b2g-form-success')">
+<form class="space-y-space-xs" onsubmit="submitLeadForm(event, 'Заявка с сайта B2G/МКД — Усиление ПРО', 'b2g-form-success')"><input type="text" name="_hp" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <div>
 <label class="block font-technical-badge text-[11px] uppercase text-slate-muted mb-1">Город и адрес объекта</label>
 <input class="w-full bg-surface-container-low border border-concrete-border p-space-xs rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary" name="Адрес_объекта" placeholder="Например, г. Самара, ул. Ленина, д. 14" required="" type="text"/>
@@ -576,9 +576,7 @@
 </section>
 </div>
 <script>
-  // Отправка заявок на почту mail@usilenie.pro через FormSubmit.co (без бэкенда).
-  // При первой отправке с сайта FormSubmit пришлёт на mail@usilenie.pro письмо-подтверждение —
-  // нужно один раз кликнуть "Activate" в нём, дальше все заявки идут напрямую.
+  // Отправка заявок на почту mail@usilenie.pro через собственную функцию /api/lead (Vercel → SMTP Яндекс 360).
   function submitLeadForm(event, subjectLabel, successElId) {
     event.preventDefault();
     const form = event.target;
@@ -586,14 +584,14 @@
     const successEl = successElId ? document.getElementById(successElId) : null;
     const data = new FormData(form);
     data.append('_subject', subjectLabel);
-    data.append('_captcha', 'false');
-    data.append('_template', 'table');
+    data.append('_page', location.pathname + location.search);
+    data.append('_t', String(Math.round(performance.now())));
     const originalHTML = btn ? btn.innerHTML : null;
     if (btn) { btn.disabled = true; btn.innerHTML = 'Отправка…'; }
-    fetch('https://formsubmit.co/ajax/mail@usilenie.pro', {
+    fetch('/api/lead', {
       method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: data
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(data))
     })
       .then((r) => (r.ok ? r.json() : Promise.reject(r)))
       .then(() => {

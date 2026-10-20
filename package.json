@@ -1,0 +1,11 @@
+{
+  "name": "usilenie-pro-site",
+  "private": true,
+  "description": "Сайт usilenie.pro: статика + функция приёма заявок api/lead.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

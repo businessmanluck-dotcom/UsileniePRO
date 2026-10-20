@@ -620,7 +620,7 @@
                 Инженер проведет 3D-нивелирование оснований, георадарную локализацию разуплотнений и составит смету работ без остановки вашего бизнеса.
               </p>
 </div>
-<form class="space-y-space-md" id="b2b-lead-form">
+<form class="space-y-space-md" id="b2b-lead-form"><input type="text" name="_hp" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
 <div>
 <label class="font-metric-label text-metric-label uppercase text-slate-muted block mb-1" for="lead-name">
@@ -748,9 +748,7 @@
         });
       });
 
-      // Отправка заявок на почту mail@usilenie.pro через FormSubmit.co (без бэкенда).
-      // При первой отправке с сайта FormSubmit пришлёт на mail@usilenie.pro письмо-подтверждение —
-      // нужно один раз кликнуть "Activate" в нём, дальше все заявки идут напрямую.
+      // Отправка заявок на почту mail@usilenie.pro через собственную функцию /api/lead (Vercel → SMTP Яндекс 360).
       const form = document.getElementById('b2b-lead-form');
       if (form) {
         form.addEventListener('submit', (e) => {
@@ -759,14 +757,14 @@
           const successBox = document.getElementById('form-success');
           const data = new FormData(form);
           data.append('_subject', 'Заявка с сайта B2B — Усиление ПРО');
-          data.append('_captcha', 'false');
-          data.append('_template', 'table');
+          data.append('_page', location.pathname + location.search);
+          data.append('_t', String(Math.round(performance.now())));
           const originalHTML = btn ? btn.innerHTML : null;
           if (btn) { btn.disabled = true; btn.innerHTML = 'Отправка…'; }
-          fetch('https://formsubmit.co/ajax/mail@usilenie.pro', {
+          fetch('/api/lead', {
             method: 'POST',
-            headers: { 'Accept': 'application/json' },
-            body: data
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(Object.fromEntries(data))
           })
             .then((r) => (r.ok ? r.json() : Promise.reject(r)))
             .then(() => {
